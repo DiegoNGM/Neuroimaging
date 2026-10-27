@@ -1,0 +1,34 @@
+__pycache__/
+*.pyc
+
+# uv / venv
+venv/
+.venv/
+
+# Packaging
+*.egg-info/
+dist/
+build/
+
+# Logs / notebooks / outputs
+*.log
+.quarto/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.jupyter_ystore.db
+**/.jupyter_ystore.db
+output/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Agents instructions
+AGENTS.md
