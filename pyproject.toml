@@ -3,7 +3,7 @@ name = "Neuroimaging"
 version = "0.1.0"
 description = ""
 authors = [{ name = "Raul Gomez", email = "rgomez@tec.mx" }]
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = []
 
 [project.scripts]
@@ -18,3 +18,9 @@ where = ["src"]
 [build-system]
 requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "ipython>=9.17.1",
+]
