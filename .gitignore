@@ -8,6 +8,9 @@ venv/
 # data
 data/
 
+# exploration
+notebooks/exploration/
+
 # Packaging
 *.egg-info/
 dist/

@@ -5,7 +5,6 @@ description = ""
 authors = [{ name = "Raul Gomez", email = "rgomez@tec.mx" }]
 requires-python = ">=3.11"
 dependencies = [
-    "argparse>=1.4.0",
     "matplotlib>=3.11.2",
     "nibabel>=5.4.2",
     "numpy>=2.4.6",
