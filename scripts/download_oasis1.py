@@ -1,12 +1,16 @@
-"""Download and safely extract OASIS-1 raw MRI archives.
+"""
+Download and safely extract OASIS-1 raw MRI archives.
 
-Run from anywhere: uv run python scripts/download_oasis1.py --discs 1
-By default the destination is <project root>/data/raw, inferred from this script's
+To download the entire dataset: uv run python scripts/download_oasis1.py
+To download selected discs: uv run python scripts/download_oasis1.py --discs 1 2 3
+
+By default the destination is data/raw
 location in <project root>/scripts. See --help for options.
 
 Review the OASIS data-use terms before downloading:
 https://sites.wustl.edu/oasisbrains/request-access/
 """
+
 import argparse
 from pathlib import Path
 from Neuroimaging import(
