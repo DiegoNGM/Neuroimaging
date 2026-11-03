@@ -1,0 +1,35 @@
+% =====================================================================
+% preamble.tex — packages, bibliography and macros.
+% This is the only file that should change if we move to a journal
+% template; main.tex and sections/ stay the same.
+% =====================================================================
+
+% --- Encoding and fonts ----------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[american]{babel}
+\usepackage{microtype}
+
+% --- Layout ----------------------------------------------------------
+\usepackage[margin=1in]{geometry}
+
+% --- Math, figures and tables ----------------------------------------
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{booktabs}
+
+% --- Bibliography (APA) ----------------------------------------------
+% Single source of references for the whole repository (see #4).
+% references.bib is exported by Zotero/Better BibTeX: do not edit it.
+\usepackage{csquotes}
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{../../references.bib}
+
+% --- Cross-references (hyperref, then cleveref, always last) ---------
+\usepackage[hidelinks]{hyperref}
+\usepackage[capitalise, noabbrev]{cleveref}
+
+% --- Macros ----------------------------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}

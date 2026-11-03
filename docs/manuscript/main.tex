@@ -1,0 +1,31 @@
+% =====================================================================
+% main.tex — entry point of the manuscript.
+% Build: `latexmk` from docs/manuscript/ (output in build/main.pdf).
+% Write content in sections/, not here.
+% =====================================================================
+\documentclass[11pt]{article}
+
+\input{preamble}
+
+% TODO(#7): define authorship and affiliations with the team.
+\title{Interpretable Convolutional Neural Networks for Alzheimer's Disease Classification from Structural MRI}
+\author{Authors to be defined}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\input{sections/abstract}
+
+\input{sections/introduction}
+\input{sections/theoretical_framework/theoretical_framework}
+\input{sections/related_work}
+\input{sections/methods}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\printbibliography
+
+\end{document}
