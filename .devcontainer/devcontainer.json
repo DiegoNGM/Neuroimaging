@@ -1,0 +1,25 @@
+{
+  "name": "Neuroimaging manuscript (TeX Live 2025)",
+  "build": {
+    "dockerfile": "../docs/manuscript/Dockerfile",
+    "context": "../docs/manuscript"
+  },
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      "extensions": ["James-Yu.latex-workshop"],
+      "settings": {
+        "latex-workshop.latex.recipe.default": "latexmk (latexmkrc)",
+        "latex-workshop.latex.outDir": "%DIR%/build",
+        "latex-workshop.latex.recipes": [
+          { "name": "latexmk (latexmkrc)", "tools": ["latexmk-rc"] }
+        ],
+        "latex-workshop.latex.tools": [
+          { "name": "latexmk-rc", "command": "latexmk", "args": [], "env": {} }
+        ],
+        "latex-workshop.view.pdf.viewer": "tab"
+      }
+    }
+  },
+  "postCreateCommand": "make pdf"
+}

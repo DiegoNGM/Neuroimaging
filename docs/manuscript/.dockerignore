@@ -1,0 +1,3 @@
+# The image needs no files from here; keep the build context tiny.
+*
+!Dockerfile
