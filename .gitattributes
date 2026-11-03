@@ -1,0 +1,20 @@
+# ── Line endings ────────────────────────────────────────────
+# Normalize to LF in the repository and working tree (mixed macOS/Windows team)
+* text=auto eol=lf
+
+# ── Language-aware diffs (git built-in drivers) ─────────────
+*.tex  diff=tex
+*.bib  diff=bibtex
+*.py   diff=python
+*.md   diff=markdown
+*.qmd  diff=markdown
+
+# ── Generated files ─────────────────────────────────────────
+# Collapsed in GitHub PR diffs and excluded from language stats
+references.bib  linguist-generated=true
+uv.lock         linguist-generated=true
+
+# ── Binary files ────────────────────────────────────────────
+*.pdf  binary
+*.png  binary
+*.jpg  binary
