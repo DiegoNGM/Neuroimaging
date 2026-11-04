@@ -1,0 +1,12 @@
+# latexmk configuration for the manuscript.
+# Run from docs/manuscript/:  latexmk        (single build)
+#                             latexmk -pvc   (rebuild on save)
+#                             latexmk -C     (remove build/)
+
+@default_files = ('main.tex');
+
+$pdf_mode = 1;   # pdflatex
+$pdflatex = 'pdflatex -interaction=nonstopmode -halt-on-error -file-line-error -synctex=1 %O %S';
+
+$bibtex_use = 2; # run biber when needed; remove .bbl on cleanup
+$out_dir = 'build';
