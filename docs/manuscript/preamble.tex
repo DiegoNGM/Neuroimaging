@@ -6,18 +6,32 @@
 
 % --- Encoding and fonts ----------------------------------------------
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\usepackage{newtxtext}  % Times-like: narrower, suits two columns
 \usepackage[american]{babel}
 \usepackage{microtype}
 
 % --- Layout ----------------------------------------------------------
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=0.8in, columnsep=0.25in]{geometry}
+\usepackage[small, compact]{titlesec}
+\usepackage{balance}  % evens out the columns on the last page
+
+% Title and abstract across both columns, body below them.
+% #1: file with the abstract.
+\newcommand{\makefrontmatter}[1]{%
+  \twocolumn[\begin{@twocolumnfalse}
+    \maketitle
+    \input{#1}
+    \vspace{1.5em}
+  \end{@twocolumnfalse}]%
+}
 
 % --- Math, figures and tables ----------------------------------------
-\usepackage{amsmath,amssymb}
+\usepackage{amsmath}
+\usepackage{newtxmath}  % after amsmath; includes the AMS symbols
 \usepackage{graphicx}
 \graphicspath{{figures/}}
 \usepackage{booktabs}
+\usepackage[font=small, labelfont=bf, labelsep=period]{caption}
 
 % --- Bibliography (APA) ----------------------------------------------
 % Single source of references for the whole repository (see #4).
@@ -25,6 +39,7 @@
 \usepackage{csquotes}
 \usepackage[backend=biber, style=apa]{biblatex}
 \addbibresource{../../references.bib}
+\renewcommand*{\bibfont}{\small}
 
 % --- Cross-references (hyperref, then cleveref, always last) ---------
 \usepackage[hidelinks]{hyperref}

@@ -3,7 +3,7 @@
 % Build: `latexmk` from docs/manuscript/ (output in build/main.pdf).
 % Write content in sections/, not here.
 % =====================================================================
-\documentclass[11pt]{article}
+\documentclass[10pt, twocolumn]{article}
 
 \input{preamble}
 
@@ -14,9 +14,7 @@
 
 \begin{document}
 
-\maketitle
-
-\input{sections/abstract}
+\makefrontmatter{sections/abstract}
 
 \input{sections/introduction}
 \input{sections/theoretical_framework/theoretical_framework}
@@ -26,6 +24,7 @@
 \input{sections/discussion}
 \input{sections/conclusion}
 
+\balance
 \printbibliography
 
 \end{document}
