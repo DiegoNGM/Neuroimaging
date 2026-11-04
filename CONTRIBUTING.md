@@ -41,6 +41,8 @@ Everything is in `docs/manuscript/`. Leave `main.tex` and `preamble.tex` alone u
 | Methods, results, discussion, conclusion | `sections/<section>.tex`                                    |
 | Figures                                  | `figures/`                                                  |
 
+The manuscript is two-column: size figures and tables with `\columnwidth`, and use `figure*` / `table*` with `\textwidth` to span both columns.
+
 ## Bibliography
 
 All references live in the team's **Zotero group library** (ask @Lunaaaalj for access). `references.bib`, at the repository root, is generated from it and is the only bibliography file in the repo.
