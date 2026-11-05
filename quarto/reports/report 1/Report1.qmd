@@ -1,5 +1,4 @@
 ---
-lang: es
 format:
    pdf:
      documentclass: article
@@ -17,8 +16,7 @@ format:
 
 \begin{center}
 \vspace*{-3.8cm}
-\hspace*{-1.3cm}
-\includegraphics[height=5cm]{tecnologico-de-monterrey-blue}
+\includegraphics[height=5cm]{GenoBit_label}
 \vspace*{0.5cm}
 
 \vspace{1.5cm}
@@ -67,4 +65,4 @@ format:
 
 \thispagestyle{empty}
 
-{{< include _Etapa1_content.qmd >}}
+{{< include _report1_content.qmd >}}
