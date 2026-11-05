@@ -25,6 +25,20 @@ build/
 **/.jupyter_ystore.db
 output/
 
+# LaTeX (manuscript builds go to docs/manuscript/build/; these catch
+# stray outputs from running pdflatex directly). Figures in figures/ are kept.
+/docs/manuscript/*.pdf
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
 # OS
 .DS_Store
 Thumbs.db
@@ -32,6 +46,7 @@ Thumbs.db
 # Editors
 .vscode/
 .idea/
+.nvim/
 *.swp
 *.swo
 *~
